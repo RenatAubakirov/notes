@@ -31,7 +31,7 @@ class NoteManager:
             if note.note_id == note_id:
                 note.title = title
                 note.body = body
-                note.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                note.timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
                 break
         self.save_notes()
 
