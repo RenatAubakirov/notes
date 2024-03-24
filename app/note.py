@@ -5,7 +5,7 @@ class Note:
         self.note_id = note_id
         self.title = title
         self.body = body
-        self.timestamp = timestamp if timestamp else datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.timestamp = timestamp if timestamp else datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 
     def to_dict(self):
         return {
